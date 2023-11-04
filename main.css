@@ -1,0 +1,38 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  height: 100%;
+}
+
+img, picture, video, svg, canvas{
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+  overflow-wrap: break-word;
+}
+
+body{
+  font-family: sans-serif;
+  background-color: var(--black);
+}
+
+:root{
+  --grad1: hsl(329.38 100% 28.43%);
+  --grad2: hsl(18.18 100% 54.71%);
+  --grad3: hsl(341.52 100% 53.53%);
+  --blue: hsl(203.66, 100%, 48.24%);
+  --like: hsl(355.36 100% 59.41%);
+  --white: hsl(0 100% 100%);
+  --black: hsl(0 0% 0%);
+  --btn: hsl(0, 0%, 14.9%);
+  --gray: hsl(0, 0%, 47.45%);
+}

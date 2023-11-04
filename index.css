@@ -1,0 +1,113 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  height: 100%;
+}
+
+img, picture, video, svg, canvas{
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+  overflow-wrap: break-word;
+}
+
+.container{
+  gap: 1.5rem;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  max-width: 450px;
+  margin-top: 1.5rem;
+  padding-inline: 1rem;
+  flex-direction: column;
+}
+
+.subhead{
+  font-size: 0.95rem;
+  color: var(--white);
+}
+
+.users{
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.user{
+  width: 100%;
+  gap: 0.85rem;
+  display: grid;
+  font-size: 0.85rem;
+  color: var(--white);
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+}
+
+.user picture{
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: var(--black);
+  border: 2px solid var(--grad1);
+}
+
+.user div:nth-child(2){
+  gap: 0.35rem;
+  display: grid;
+}
+
+.user p{
+  font-size: 0.75rem;
+  color: var(--gray);
+}
+
+.user div:last-child{
+  gap: 0.65rem;
+  display: flex;
+  align-items: center;
+}
+
+.follow{
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: var(--white);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.95rem;
+  background-color: var(--blue);
+}
+
+.option{
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  color: var(--gray);
+  background-color: transparent;
+}
+
+.modal{
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  z-index: 5;
+  border: none;
+  outline: none;
+  display: none;
+  position: fixed;
+  text-align: left;
+  color: var(--white);
+  border-radius: 0.5rem;
+  padding: 0.95rem 0.75rem;
+  background-color: var(--btn);
+  transform: translate(-50%, -50%);
+}
